@@ -5,10 +5,10 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    #rooms = str(escape(request.args.get("rooms","")))
-    return (
-        """<h1>Index</h1>"""
-    ) 
+  #rooms = str(escape(request.args.get("rooms","")))
+  return (
+      """<h1>Index</h1>"""
+  ) 
     
 @app.route("/rooms", methods=['GET','POST'])
 def generateDungeon():
