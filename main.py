@@ -1,5 +1,5 @@
 from flask import Flask
-from flask import Request
+from flask import request, escape
 
 
 
@@ -9,9 +9,9 @@ app = Flask(__name__)
 @app.route("/")
 
 def index():
-    rooms = Request.args.get("rooms","")
+    rooms = str(escape(request.args.get("rooms","")))
     return (
-        """<form action="" method="get">
+        """<form actio  n="" method="get">
                 <input type="text" name="rooms">
                 <input type="submit" value="Generate">
               </form>"""
