@@ -1,2 +1,6 @@
 venv*
+
+#ignore gcloud deployment files
 cloud-google-gpg*
+cloud.google.*
+apit-key.gpg
