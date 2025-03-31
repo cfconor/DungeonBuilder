@@ -1,5 +1,6 @@
 #ignore venv
 venv*
+.venv*
 
 #ignore gcloud deployment files
 cloud-google-gpg*

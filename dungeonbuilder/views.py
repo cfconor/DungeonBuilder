@@ -1,7 +1,4 @@
-from flask import Flask
-from flask import request, escape, render_template
-
-app = Flask(__name__)
+from dungeonbuilder import app
 
 @app.route("/")
 def index():
